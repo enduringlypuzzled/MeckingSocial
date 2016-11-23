@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0A8E703E1DE20A2B00147756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E703D1DE20A2B00147756 /* AppDelegate.swift */; };
-		0A8E70401DE20A2B00147756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E703F1DE20A2B00147756 /* ViewController.swift */; };
+		0A8E70401DE20A2B00147756 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E703F1DE20A2B00147756 /* SignInVC.swift */; };
 		0A8E70431DE20A2B00147756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E70411DE20A2B00147756 /* Main.storyboard */; };
 		0A8E70451DE20A2B00147756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E70441DE20A2B00147756 /* Assets.xcassets */; };
 		0A8E70481DE20A2B00147756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E70461DE20A2B00147756 /* LaunchScreen.storyboard */; };
+		0A8E70501DE20ADA00147756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */; };
+		AD5929DDFC1D8787B78A0747 /* Pods_MeckingSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D84A07C33CCB530DAE3FE /* Pods_MeckingSocial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0085A95EB0F1452DB8F9B07E /* Pods-MeckingSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeckingSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeckingSocial/Pods-MeckingSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		0A8E703A1DE20A2B00147756 /* MeckingSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeckingSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8E703D1DE20A2B00147756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A8E703F1DE20A2B00147756 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A8E703F1DE20A2B00147756 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		0A8E70421DE20A2B00147756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A8E70441DE20A2B00147756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A8E70471DE20A2B00147756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8E70491DE20A2B00147756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A7D84A07C33CCB530DAE3FE /* Pods_MeckingSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeckingSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43557C22B65FAE70CEBEB31F /* Pods-MeckingSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeckingSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeckingSocial/Pods-MeckingSocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5929DDFC1D8787B78A0747 /* Pods_MeckingSocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0A8E703C1DE20A2B00147756 /* MeckingSocial */,
 				0A8E703B1DE20A2B00147756 /* Products */,
+				75644CE5FF10EBE03517762E /* Pods */,
+				C73CEAA1945B7844AA8B83FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		0A8E703C1DE20A2B00147756 /* MeckingSocial */ = {
 			isa = PBXGroup;
 			children = (
+				0A8E70511DE20DD600147756 /* Model */,
+				0A8E70531DE20DE100147756 /* View */,
+				0A8E70521DE20DDB00147756 /* Controller */,
 				0A8E703D1DE20A2B00147756 /* AppDelegate.swift */,
-				0A8E703F1DE20A2B00147756 /* ViewController.swift */,
 				0A8E70411DE20A2B00147756 /* Main.storyboard */,
 				0A8E70441DE20A2B00147756 /* Assets.xcassets */,
 				0A8E70461DE20A2B00147756 /* LaunchScreen.storyboard */,
 				0A8E70491DE20A2B00147756 /* Info.plist */,
+				0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */,
 			);
 			path = MeckingSocial;
+			sourceTree = "<group>";
+		};
+		0A8E70511DE20DD600147756 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0A8E70521DE20DDB00147756 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A8E703F1DE20A2B00147756 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0A8E70531DE20DE100147756 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		75644CE5FF10EBE03517762E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0085A95EB0F1452DB8F9B07E /* Pods-MeckingSocial.debug.xcconfig */,
+				43557C22B65FAE70CEBEB31F /* Pods-MeckingSocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C73CEAA1945B7844AA8B83FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D84A07C33CCB530DAE3FE /* Pods_MeckingSocial.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A8E704C1DE20A2B00147756 /* Build configuration list for PBXNativeTarget "MeckingSocial" */;
 			buildPhases = (
+				144A3500CAE1166D15D43FFE /* [CP] Check Pods Manifest.lock */,
 				0A8E70361DE20A2A00147756 /* Sources */,
 				0A8E70371DE20A2A00147756 /* Frameworks */,
 				0A8E70381DE20A2A00147756 /* Resources */,
+				E8F64EAB16C1067345AD75F9 /* [CP] Embed Pods Frameworks */,
+				133E35BAB7013F15B5FD49F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +150,7 @@
 				TargetAttributes = {
 					0A8E70391DE20A2A00147756 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2AAMEURGQN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8E70481DE20A2B00147756 /* LaunchScreen.storyboard in Resources */,
+				0A8E70501DE20ADA00147756 /* GoogleService-Info.plist in Resources */,
 				0A8E70451DE20A2B00147756 /* Assets.xcassets in Resources */,
 				0A8E70431DE20A2B00147756 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		133E35BAB7013F15B5FD49F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeckingSocial/Pods-MeckingSocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		144A3500CAE1166D15D43FFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F64EAB16C1067345AD75F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeckingSocial/Pods-MeckingSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A8E70361DE20A2A00147756 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8E70401DE20A2B00147756 /* ViewController.swift in Sources */,
+				0A8E70401DE20A2B00147756 /* SignInVC.swift in Sources */,
 				0A8E703E1DE20A2B00147756 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +362,10 @@
 		};
 		0A8E704D1DE20A2B00147756 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0085A95EB0F1452DB8F9B07E /* Pods-MeckingSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
 				INFOPLIST_FILE = MeckingSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Frawst.MeckingSocial;
@@ -270,8 +376,10 @@
 		};
 		0A8E704E1DE20A2B00147756 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43557C22B65FAE70CEBEB31F /* Pods-MeckingSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
 				INFOPLIST_FILE = MeckingSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Frawst.MeckingSocial;
@@ -299,6 +407,7 @@
 				0A8E704E1DE20A2B00147756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
