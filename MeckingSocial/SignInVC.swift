@@ -13,6 +13,8 @@ import Firebase
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailField: FancyField!
+    @IBOutlet weak var pwField: FancyField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,11 +33,11 @@ class SignInVC: UIViewController {
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             
             if error != nil {
-                print("Steve:Unable to authenticate with Facebook - \(error)")
+                print("Steve: Unable to authenticate with Facebook - \(error)")
             }else if result?.isCancelled == true {
-                print("Steve:User cancelled Facebook authentication")
+                print("Steve: User cancelled Facebook authentication")
             }else {
-                print("Steve:Successfully authenticated with Facebook")
+                print("Steve: Successfully authenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
             }
@@ -56,6 +58,30 @@ class SignInVC: UIViewController {
         })
     }
 
+    @IBAction func signinBtnPressed(_ sender: AnyObject) {
+        
+        if let email = emailField.text, let pwd = pwField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                
+                if error == nil {
+                    print("Steve: Email user authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("Steve: Unable to authenticate with Firebase")
+                        }else {
+                            print("Steve: Succesfully authenticated with Firebase")
+                        }
+                    })
+                }
+                
+            })
+            
+        }
+        
+        
+    }
+    
 
 }
 
