@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E5893F1C3B7E62C8D5B35199BC925D1"
-               BuildableName = "Pods_MeckingSocial.framework"
-               BlueprintName = "Pods-MeckingSocial"
+               BlueprintIdentifier = "76D40C96849191DB59BCC77DDC1AFDC2"
+               BuildableName = "SwiftKeychainWrapper.framework"
+               BlueprintName = "SwiftKeychainWrapper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E5893F1C3B7E62C8D5B35199BC925D1"
-            BuildableName = "Pods_MeckingSocial.framework"
-            BlueprintName = "Pods-MeckingSocial"
+            BlueprintIdentifier = "76D40C96849191DB59BCC77DDC1AFDC2"
+            BuildableName = "SwiftKeychainWrapper.framework"
+            BlueprintName = "SwiftKeychainWrapper"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

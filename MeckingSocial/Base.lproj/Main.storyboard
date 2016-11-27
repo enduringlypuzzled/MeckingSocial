@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lK-9s-cQS" customClass="FancyView" customModule="MeckingSocial" customModuleProvider="target">
@@ -122,11 +122,46 @@
                     <connections>
                         <outlet property="emailField" destination="Dny-ps-SxD" id="lbd-w5-Ns9"/>
                         <outlet property="pwField" destination="oA5-I9-CJD" id="Vzk-Nm-SuA"/>
+                        <segue destination="lue-mB-fsY" kind="show" identifier="goToFeed" id="Nvq-NQ-fIb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118.125" y="121.47887323943662"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="7en-I2-ewK">
+            <objects>
+                <viewController id="lue-mB-fsY" customClass="FeedVC" customModule="MeckingSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJ9-bx-CwS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vet-A8-jmV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBR-oJ-SfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1K-sR-2ci">
+                                <frame key="frameInset" minX="110" minY="269" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SignOutPressed:" destination="lue-mB-fsY" eventType="touchUpInside" id="fCG-KG-pok"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.30196078430000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.30196078430000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="vTL-BI-MKY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCX-Rk-Zz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.5" y="120.4225352112676"/>
         </scene>
     </scenes>
     <resources>
