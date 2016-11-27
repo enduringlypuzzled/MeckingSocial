@@ -76,10 +76,15 @@ class SignInVC: UIViewController {
                 
                 if error == nil {
                     print("Steve: Email user authenticated with Firebase")
+                    //self.completeSignIn(id: user.uid)
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            print("Steve: Unable to authenticate with Firebase")
+                            
+                            print("Steve: Unable to authenticate with Firebase \(error)")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }else {
                             print("Steve: Succesfully authenticated with Firebase")
                             if let user = user {

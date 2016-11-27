@@ -1,25 +1,30 @@
 //
-//  FancyView.swift
+//  CircleView.swift
 //  MeckingSocial
 //
-//  Created by Steve Mecking on 2016-11-23.
+//  Created by Steve Mecking on 2016-11-27.
 //  Copyright © 2016 Steve Mecking. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+class CircleView: UIImageView {
 
-   //give the view a shadow
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        //Btn Shadow
         layer.shadowColor = UIColor(red: SHADOW_GRAY, green: SHADOW_GRAY, blue: SHADOW_GRAY, alpha: 0.6).cgColor
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1, height: 1)
-        layer.cornerRadius = 2.0
         
+        //imageView?.contentMode = .scaleAspectFit
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = self.frame.width / 2
+    }
+   
 }
