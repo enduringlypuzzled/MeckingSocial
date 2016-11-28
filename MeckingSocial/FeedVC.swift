@@ -17,10 +17,14 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate=self
         tableView.dataSource=self
         
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print(snapshot.value)
+        })
+        
+            
     }
     
     // TableView Stuff -------------------------------------------
@@ -43,7 +47,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBAction func signOutPresses(_ sender: AnyObject) {
-        
         //let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         try! FIRAuth.auth()?.signOut()
         print("Steve: removed from keychain ")
