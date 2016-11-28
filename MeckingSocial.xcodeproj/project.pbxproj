@@ -16,6 +16,7 @@
 		0A8E70501DE20ADA00147756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */; };
 		0A99E9A01DEC60B80003E288 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E99F1DEC60B80003E288 /* DataService.swift */; };
 		0AAA95221DEB1D89008E7EA7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA95211DEB1D89008E7EA7 /* CircleView.swift */; };
+		0ADA4B3D1DEC954B00F5B1D1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA4B3C1DEC954B00F5B1D1 /* Post.swift */; };
 		0ADDA54B1DEB824400C31F74 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDA54A1DEB824400C31F74 /* PostCell.swift */; };
 		0ADDED701DE5C6530004A63A /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDED6F1DE5C6530004A63A /* FancyView.swift */; };
 		0ADDED731DE5C6DF0004A63A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDED721DE5C6DF0004A63A /* Constants.swift */; };
@@ -39,6 +40,7 @@
 		0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A99E99F1DEC60B80003E288 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0AAA95211DEB1D89008E7EA7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0ADA4B3C1DEC954B00F5B1D1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0ADDA54A1DEB824400C31F74 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		0ADDED6F1DE5C6530004A63A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		0ADDED721DE5C6DF0004A63A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		0A8E70511DE20DD600147756 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA4B3C1DEC954B00F5B1D1 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				0AAA95221DEB1D89008E7EA7 /* CircleView.swift in Sources */,
 				0ADDED771DE5CA980004A63A /* FancyField.swift in Sources */,
 				0A8E70401DE20A2B00147756 /* SignInVC.swift in Sources */,
+				0ADA4B3D1DEC954B00F5B1D1 /* Post.swift in Sources */,
 				0ADDED751DE5C8F60004A63A /* RoundBtn.swift in Sources */,
 				0A8E703E1DE20A2B00147756 /* AppDelegate.swift in Sources */,
 				0A99E9A01DEC60B80003E288 /* DataService.swift in Sources */,
