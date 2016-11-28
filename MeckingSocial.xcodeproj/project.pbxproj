@@ -14,6 +14,7 @@
 		0A8E70451DE20A2B00147756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E70441DE20A2B00147756 /* Assets.xcassets */; };
 		0A8E70481DE20A2B00147756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E70461DE20A2B00147756 /* LaunchScreen.storyboard */; };
 		0A8E70501DE20ADA00147756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */; };
+		0A99E9A01DEC60B80003E288 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99E99F1DEC60B80003E288 /* DataService.swift */; };
 		0AAA95221DEB1D89008E7EA7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA95211DEB1D89008E7EA7 /* CircleView.swift */; };
 		0ADDA54B1DEB824400C31F74 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDA54A1DEB824400C31F74 /* PostCell.swift */; };
 		0ADDED701DE5C6530004A63A /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDED6F1DE5C6530004A63A /* FancyView.swift */; };
@@ -36,6 +37,7 @@
 		0A8E70471DE20A2B00147756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8E70491DE20A2B00147756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8E704F1DE20ADA00147756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A99E99F1DEC60B80003E288 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0AAA95211DEB1D89008E7EA7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		0ADDA54A1DEB824400C31F74 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		0ADDED6F1DE5C6530004A63A /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		0A8E703C1DE20A2B00147756 /* MeckingSocial */ = {
 			isa = PBXGroup;
 			children = (
+				0A99E99E1DEC60A20003E288 /* Services */,
 				0A643BA01DE9B9F400A5BF35 /* MeckingSocial.entitlements */,
 				0ADDED711DE5C6CE0004A63A /* Utils */,
 				0A8E70511DE20DD600147756 /* Model */,
@@ -122,6 +125,14 @@
 				0ADDA54A1DEB824400C31F74 /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		0A99E99E1DEC60A20003E288 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A99E99F1DEC60B80003E288 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		0ADDED711DE5C6CE0004A63A /* Utils */ = {
@@ -284,6 +295,7 @@
 				0A8E70401DE20A2B00147756 /* SignInVC.swift in Sources */,
 				0ADDED751DE5C8F60004A63A /* RoundBtn.swift in Sources */,
 				0A8E703E1DE20A2B00147756 /* AppDelegate.swift in Sources */,
+				0A99E9A01DEC60B80003E288 /* DataService.swift in Sources */,
 				0A32E9031DE9C97000DA79E1 /* FeedVC.swift in Sources */,
 				0ADDED701DE5C6530004A63A /* FancyView.swift in Sources */,
 				0ADDED731DE5C6DF0004A63A /* Constants.swift in Sources */,

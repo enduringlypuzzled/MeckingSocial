@@ -62,7 +62,8 @@ class SignInVC: UIViewController {
             } else {
                 print("Steve:Successfully authenticated with Firebase")
                 if let user = user {
-                        self.completeSignIn(id: user.uid)
+                    let userData = ["provider": user.providerID]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -76,19 +77,22 @@ class SignInVC: UIViewController {
                 
                 if error == nil {
                     print("Steve: Email user authenticated with Firebase")
-                    //self.completeSignIn(id: user.uid)
+                    
+                    if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                    }
+                    
                 } else {
+                    
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            
                             print("Steve: Unable to authenticate with Firebase \(error)")
-                            if let user = user {
-                                self.completeSignIn(id: user.uid)
-                            }
                         }else {
                             print("Steve: Succesfully authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -101,9 +105,12 @@ class SignInVC: UIViewController {
         
     }
     
-    func completeSignIn(id: String){
+    func completeSignIn(id: String, userData: Dictionary<String, String>){
+        
+        DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
         //KeychainWrapper.standard.set(id, forKey: KEY_UID)
         performSegue(withIdentifier: "goToFeed", sender: nil)
+        
     }
 
 }
