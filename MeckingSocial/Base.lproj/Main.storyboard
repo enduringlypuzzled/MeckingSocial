@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lK-9s-cQS" customClass="FancyView" customModule="MeckingSocial" customModuleProvider="target">
@@ -138,7 +138,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Vet-A8-jmV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xBR-oJ-SfL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgT-Y9-ZhH" customClass="FancyView" customModule="MeckingSocial" customModuleProvider="target">
@@ -172,12 +172,16 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-yS-mlM">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-0C-wiA" customClass="CircleView" customModule="MeckingSocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-0C-wiA" customClass="CircleView" customModule="MeckingSocial" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.11764705882352941" green="0.30196078431372547" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="ggW-8M-VJ1"/>
                                                     <constraint firstAttribute="width" constant="44" id="rrV-tf-WyS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="YMr-ka-0lj" appends="YES" id="ucJ-m3-43K"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDM-rt-r0t" customClass="FancyField" customModule="MeckingSocial" customModuleProvider="target">
                                                 <color key="textColor" red="0.74509803919999995" green="0.81960784310000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -208,10 +212,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="350" id="vhv-Zd-jPJ" customClass="PostCell" customModule="MeckingSocial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="350"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhv-Zd-jPJ" id="L4f-KI-cbO">
-                                            <frame key="frameInset" width="320" height="350"/>
+                                            <frame key="frameInset" width="375" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mF-7b-LVy" customClass="FancyView" customModule="MeckingSocial" customModuleProvider="target">
@@ -315,6 +319,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="4Od-0C-wiA" id="Mmk-Im-BcE"/>
                         <outlet property="tableView" destination="aUG-Xn-AUm" id="bRB-ol-7Fb"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="vTL-BI-MKY"/>
                     </connections>
@@ -323,6 +328,11 @@
                 <tapGestureRecognizer id="zWe-mU-Vff">
                     <connections>
                         <action selector="signOutPresses:" destination="lue-mB-fsY" id="9w3-6b-X6C"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YMr-ka-0lj">
+                    <connections>
+                        <action selector="addImagePressed:" destination="lue-mB-fsY" id="BC6-IF-HbG"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
